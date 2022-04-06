@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jeu de dé en Java">
     <title>Jeu Java</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 
@@ -17,62 +22,67 @@
 
         <div class="container">
             <div class="container1">
-            <div class="newGame">
-                <div class="image"><i class="fa-solid fa-circle-plus"></i></div>
-                <button class="bouton">NEW GAME</button>
+                <div class="newGame">
+                    <div class="image"><i class="fa-solid fa-circle-plus"></i></div>
+                    <button class="bouton" id="bouton-newGame">NEW GAME</button>
+                </div>
+                <div class="blocJ">
+                    <div class="texte">Au tour du joueur : </div>
+                    <div class="numberPlayer" id="Joueur">1</div>
+                </div>
             </div>
-        </div>
             <div class="container2">
                 <div class="blocjeu">
                     <div class="playerName">Player 1</div>
-                    <div class="scorePlayer">43</div>
+                    <div class="scorePlayer" id="divScore1">0</div>
                 </div>
                 <div class="blocjeu">
-                    <div class="chiffre"><i class="fa-solid fa-dice-five"></i></div>
+                    <div class="chiffre" id="afficherResultat"><img class="imageDe" id="image-de"></img></div>
                 </div>
                 <div class="blocjeu">
                     <div class="playerName">Player 2</div>
-                    <div class="scorePlayer">72</div>
+                    <div class="scorePlayer" id="divScore2">0</div>
                 </div>
 
             </div>
             <div class="container3">
                 <div class="blocjeu">
                     <div class="supportCarre">
-                    <div class="carre">
-                        <div class="current">Current</div>
-                        <div class="chiffre2">11</div>
-                    </div>
+                        <div class="carre">
+                            <div class="current">Current</div>
+                            <div class="chiffre2" id="currentScore1">0</div>
+                        </div>
                     </div>
                 </div>
                 <div class="blocjeu">
                     <div class="blocs">
-                <div class="bloc1">
-                    <div class="blocmid">
-                    <div class="logoroll"><i class="fa-solid fa-arrows-rotate"></i></div>
-                    <div class="roll">roll dice</div>
-                </div>
-            </div>
-                <div class="bloc2">
-                    <div class="blocmid">
-                    <div class="logohold"><i class="fa-solid fa-angles-down"></i></div>
-                    <div class="hold">hold</div>
+                        <div class="bloc1">
+                            <div class="blocmid">
+                                <div class="logoroll"><i class="fa-solid fa-arrows-rotate"></i></div>
+                                <button id="bouton-lancer" class="roll">roll dice</button>
+                            </div>
+                        </div>
+                        <div class="bloc2">
+                            <div class="blocmid">
+                                <div class="logohold"><i class="fa-solid fa-angles-down"></i></div>
+                                <div id="bouton-hold" class="hold">hold</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
                 </div>
                 <div class="blocjeu">
                     <div class="supportCarre">
-                    <div class="carre">
-                        <div class="current">Current</div>
-                        <div class="chiffre2">0</div>
-                    </div>
+                        <div class="carre">
+                            <div class="current">Current</div>
+                            <div class="chiffre2" id="currentScore2">0</div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-
+            <div class="blocReglement"><a href="reglement.html" class="reglement">Règlement du jeu</a></div>
         </div>
+
 
 
 
@@ -80,7 +90,8 @@
     </section>
 
 
-
+    <script src="app.js"></script>
 
 </body>
+
 </html>

@@ -1,205 +1,409 @@
 /* POLICE */
 
-@import url(https://fonts.google.com/specimen/Lato);
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@100&display=swap');
 
-html, body
-{
-    margin:auto;
+html,
+body {
+    margin: auto;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
-.container
-{
-    display:flex;
+.container {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height:100vh;
-    background:white;
+    height: 100vh;
+    background: white;
 }
 
-.container1
-{
-    width:100%;
-    height:20%;
+.container1 {
+    width: 100%;
+    height: 20%;
 }
 
-.newGame
-{
+.newGame {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top:50px;
+    padding-top: 50px;
+
 
 }
 
-.image
-{
+.image {
     background: url('plus.sgv');
     font-size: 2rem;
-    color:rgb(226, 145, 145);
+    color: rgb(226, 145, 145);
 }
 
-.bouton
-{
-margin-left: 10px;
-font-size: 1.5rem;
-background: transparent;
-border: none;
+.bouton {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
 }
 
-.container2
-{
-    width:100%;
-    height:50%;
-    display:flex;
+.blocJ {
+
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.numberPlayer {
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.container2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.blocjeu
-{
-    width:30%;
-    height:80%;
+.blocjeu {
+    width: 30%;
+    height: 80%;
 }
 
-.playerName
-{
+.playerName {
     text-align: center;
-    margin-top:5%;
+    margin-top: 5%;
     font-size: 2.5rem;
     text-transform: uppercase;
 
 }
 
-.scorePlayer
-{
+.scorePlayer {
     text-align: center;
-    margin-top:10%;
+    margin-top: 10%;
     font-size: 4rem;
-    color:rgb(226, 145, 145);
+    color: rgb(226, 145, 145);
 }
 
-.chiffre
-{
+.chiffre {
     text-align: center;
-    margin-top:25%;  
+    margin-top: 25%;
     font-size: 4rem;
+    height: 100%;
 }
 
-.container3
-{
-    width:100%;
-    height:50%;
-    display:flex;
+.imageDe {
+    margin: auto;
+    background: cover;
+    font-size: 1rem;
+    width: 30%;
+    height: 50%;
+    border: none;
+}
+
+.container3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.supportCarre
-{
-    margin:auto;
-    width:100%;
-    height:100%;
+.supportCarre {
+    margin: auto;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carre
-{
+.carre {
 
     width: 50%;
-    height:50%;
+    height: 50%;
     background: rgb(212, 62, 62);
+
+    border-radius: 10px;
 
 }
 
 
-.current
-{
+.current {
     text-align: center;
-    padding-top:5%;
+    padding-top: 5%;
     font-size: 1.5rem;
     text-transform: uppercase;
 
+
 }
 
-.chiffre2
-{
+.chiffre2 {
     text-align: center;
-    margin-top:10%;
+    margin-top: 10%;
     font-size: 4rem;
-    color:white;
+    color: white;
 }
 
-.blocs
-{
-    width:100%;
-    height:100%;
+.blocs {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 
 }
 
-.bloc1
-{
-    width:100%;
-    height:100%;
+.bloc1 {
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-.bloc2
-{
-    width:100%;
-    height:100%;
+.bloc2 {
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 
-.logoroll
-{
+.logoroll {
     font-size: 2rem;
     color: rgb(212, 62, 62);
-    margin:auto;
+    margin: auto;
 }
 
 
-.roll{
+.roll {
 
     font-size: 2rem;
     text-transform: uppercase;
-    margin:auto;
+    margin: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
 }
 
-.blocmid
-{
-    margin:auto;
-    width:50%;
-    height:50%;
+.roll:hover {
+    font-size: 2.5rem;
+}
+
+.blocmid {
+    margin: auto;
+    width: 50%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.logohold
-{
+
+.logohold {
     font-size: 2rem;
     color: rgb(212, 62, 62);
 }
 
-.hold{
+.hold {
 
     font-size: 2rem;
     text-transform: uppercase;
-    margin-left:5%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.hold:hover {
+    font-size: 2.5rem;
+}
+
+.blocReglement {
+
+    width: 100%;
+    height: 5%;
+    border-top: 1px solid black;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a.reglement {
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .image {
+        font-size: 2rem;
+
+    }
+
+    .bouton {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    .playerName {
+        font-size: 1.2rem;
+    }
+
+    .scorePlayer {
+        font-size: 2rem;
+    }
+
+    .chiffre {
+        font-size: 2rem;
+    }
+
+
+    .current {
+        font-size: 1rem;
+
+    }
+
+    .chiffre2 {
+        font-size: 2rem;
+    }
+
+
+    .logoroll {
+        font-size: 1rem;
+    }
+
+
+    .roll {
+
+        font-size: 1rem;
+
+    }
+
+    .logohold {
+        font-size: 1rem;
+    }
+
+    .hold {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .current {
+        font-size: 0.5rem;
+
+    }
+
+}
+
+
+/*------------------------------------------
+                REGLEMENT
+--------------------------------------------*/
+
+
+.containerR {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.container1-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocRegle {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.blocR1 {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titreR {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.blocD {
+    width: 100%;
+    height: 70%;
+}
+
+p {
+    font-weight: 800;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.blocRetour {
+
+    width: 100%;
+    height: 5%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+
+    .blocRegle {
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
 
 }
